@@ -106,7 +106,6 @@ while (j < right.length) {
   result.push(right[j]);
   j++;
 }
-```
 
 This helped me understand that there is more than one correct way to solve the problem.
 
