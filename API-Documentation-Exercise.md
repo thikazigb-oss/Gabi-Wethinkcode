@@ -115,7 +115,7 @@ Provide:
 
 Review the response.
 
-### Common Errors
+### Common Errors.
 
 | Error                  | Cause                       |
 | ---------------------- | --------------------------- |
