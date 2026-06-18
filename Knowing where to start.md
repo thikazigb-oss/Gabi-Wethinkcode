@@ -85,7 +85,6 @@ Through this exercise, I learned that understanding the project structure and co
 
 This exercise taught me the importance of exploring a codebase systematically by examining its structure, identifying key components, and using AI to accelerate understanding. Understanding the project structure first makes it easier to understand the implementation later.
 
-
 - ### What I Observed
 
 The new feature requested is **Task Export to CSV**.
