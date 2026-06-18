@@ -167,7 +167,6 @@ def test_days_since_update_is_calculated_correctly():
     score = calculateTaskScore(task)
 
     assert score is not None
-```
 
 ### Minimal Fix
 
@@ -176,8 +175,6 @@ The code should calculate date differences using the correct date method instead
 ### Regression Test
 
 A regression test should be kept so that the same bug does not return in future changes.
-
----
 
 # Part 4: Integration Testing
 
