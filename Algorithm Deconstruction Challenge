@@ -1,0 +1,136 @@
+# Exercise: Algorithm Deconstruction Challenge
+
+## Selected Language and Algorithm
+
+For this exercise, I selected the **Python implementation** provided in the WeThinkCode repository. Although JavaScript and Java versions were available, I chose Python because it is the language used throughout my previous code comprehension exercises. This allowed me to build on my existing understanding of the Task Manager application.
+
+The algorithm I selected was the **Task Priority Sorting Algorithm**.
+
+## Initial Understanding
+
+Before reviewing the code, I believed that task priority was determined only by the priority level assigned to a task. I expected urgent tasks to appear before high, medium, and low-priority tasks. However, I was unsure how the application calculated importance and organized tasks.
+
+## How the Algorithm Works
+
+The Task Priority Sorting Algorithm calculates a score for each task based on multiple factors. The score determines how important a task is compared to other tasks.
+
+The algorithm considers:
+
+* Task priority
+* Due date
+* Task status
+* Task tags
+* Recent activity
+
+After calculating the score, tasks are sorted from the highest score to the lowest score.
+
+## Step-by-Step Breakdown
+
+### Step 1: Assign a Priority Weight
+
+Each priority level is given a weight:
+
+| Priority | Weight |
+| -------- | ------ |
+| Low      | 1      |
+| Medium   | 2      |
+| High     | 4      |
+| Urgent   | 6      |
+
+Higher priority tasks begin with a higher score.
+
+### Step 2: Check the Due Date
+
+The algorithm adds extra points based on how close the due date is.
+
+* Overdue tasks receive the highest bonus.
+* Tasks due today receive additional points.
+* Tasks due within two days receive bonus points.
+* Tasks due within a week receive a smaller bonus.
+
+This ensures that tasks requiring immediate attention appear higher in the list.
+
+### Step 3: Check Task Status
+
+The score is reduced for tasks that are already completed or currently under review.
+
+This prevents completed work from appearing at the top of the priority list.
+
+### Step 4: Check Tags
+
+Additional points are awarded when tasks contain important tags such as:
+
+* blocker
+* critical
+* urgent
+
+These tags indicate that the task may have a greater business impact.
+
+### Step 5: Check Recent Activity
+
+Tasks that have been updated recently receive a small score increase.
+
+This helps keep active work visible to users.
+
+### Step 6: Sort Tasks
+
+After all scores are calculated:
+
+1. Each task receives a final score.
+2. Tasks are sorted from highest score to lowest score.
+3. The highest-scoring tasks are displayed first.
+
+## Simple Data Flow Diagram
+
+Task
+↓
+Priority Weight
+↓
+Due Date Adjustment
+↓
+Status Adjustment
+↓
+Tag Bonus
+↓
+Recent Activity Bonus
+↓
+Final Score
+↓
+Sort Highest to Lowest
+↓
+Prioritized Task List
+
+## Reflection Questions
+
+### How did the AI explanation change My understanding of the algorithm?
+
+The AI explanation helped me understand that task priority is not based solely on the priority level. The application combines several factors such as deadlines, status, tags, and recent updates to calculate a final importance score.
+
+### What aspects were still difficult to understand after the AI explanation?
+
+Initially, the scoring calculations and weighting system were difficult to follow because I am still developing my understanding of algorithms. Reviewing the code alongside the explanation helped clarify the process.
+
+### How would you explain this algorithm to another junior developer?
+
+I would explain that the algorithm assigns points to each task based on its importance. Tasks with more points are considered more important and are displayed before tasks with lower scores.
+
+### Did you test this understanding against AI?
+
+Yes. I used AI to explain the algorithm step by step and compared the explanation against the actual Python code to confirm my understanding.
+
+### How might you improve the algorithm?
+
+One possible improvement would be to make the scoring values configurable so that priority rules could be adjusted without modifying the source code.
+
+## Key Learning Points
+
+Through this exercise, I learned that algorithms often combine multiple business rules rather than relying on a single value. I also learned that breaking an algorithm into smaller steps makes it much easier to understand. Using AI as a guide helped me understand the purpose of the code and increased my confidence when working with unfamiliar codebases.
+## What I Learned
+
+Before this exercise, I viewed algorithms as complex pieces of code that only experienced developers could understand. By breaking the Task Priority Sorting Algorithm into smaller steps, I learned that algorithms are simply a set of rules used to solve a problem.
+
+The most valuable lesson was learning how to analyze code systematically rather than trying to understand everything at once. Using AI prompts helped me identify the purpose of each section of code and understand how different factors contribute to the final priority score.
+
+I also learned that business rules are often embedded within algorithms. In this case, the application uses priority levels, due dates, task status, tags, and recent activity to determine which tasks should receive attention first.
+
+This exercise increased my confidence in reading unfamiliar code and showed me the importance of combining code exploration with AI-assisted learning.
