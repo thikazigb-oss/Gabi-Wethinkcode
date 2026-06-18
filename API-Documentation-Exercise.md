@@ -36,7 +36,6 @@ Registers a new user account in the system.
     "role": "user"
   }
 }
-```
 
 ### Error Responses
 
